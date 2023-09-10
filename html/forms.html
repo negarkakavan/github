@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body dir="rtl">
+    <fieldset>
+        <legend>فرم ثبت نام</legend>
+    <form action="">
+        name:<br>
+        <input type="text"><br>
+        lastename:<br>
+        <input type="text">
+    </form>
+    <form>
+        <table width="450" border="0" align="center">
+            <tr>
+                <td width="150" align="left">
+                    <label>نام کاربری</label>
+                </td>
+                <td>
+                    <input type="text" maxlength="10" siza="20" placeholder="نام کاربری خود را وارد کنید">
+                </td>
+            </tr>
+            <tr>
+                <td width="150" align="left">
+                    <label>رمز عبور:</label>
+                </td>
+                <td>
+                    <input type="password" maxlength="10" size="20" placeholder="رمز عبور خود را وارد کنید">
+                </td>
+            </tr>
+            <tr>
+                <td width="150" align="left">
+                    <label>ایمیل:</label>
+                </td>
+                <td>
+                    <input type="email" size="20" placeholder="ایمیل خود را وارد کنید">
+                </td>
+            </tr>
+            <tr>
+                <td width="150" align="left" valign="top">
+                    <label>آدرس:</label>
+                </td>
+                <td>
+                    <textarea rows="10" cols="20"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td width="150" align="left">
+                    <label>جنسیت:</label>
+                </td>
+                <td>
+                    <input type="radio" name=mard>مرد
+                    <input type="radio"name=mard>زن
+                </td>
+            </tr>
+            <tr>
+                <td width="150" align="left">
+                    <label>شهر:</label>
+                </td>
+                <td>
+                    <select>
+                        <option selected>تهران</option>
+                        <option>شیراز</option>
+                        <option>اصفهان</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td width="150" align="left">
+                    <label>استان:</label>
+                </td>
+                <td>
+                    <select>
+                        <optgroup label="گیلان">
+                            <option>بندرانزلی</option>
+                            <option>رشت</option>
+                        </optgroup>
+                        <optgroup label="مازندران">
+                            <option>ساری</option>
+                            <option>نور</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td width="150" align="left">
+                    <label>علاقه مندی ها:</label>
+                </td>
+                <td>
+                    <input type="checkbox"checked>موسیقی
+                    <input type="checkbox">سفر
+                    <input type="checkbox">کتاب
+                </td>
+            </tr>
+            <tr>
+                <td width="450" align="left">
+                    <label>فایل:</label>
+                </td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="ثبت نام">
+                    <input type="reset" value="پاک کردن">
+                </td>
+            </tr>
+            <input type="hidden">
+        </table>
+    </form>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 20px;
+        }
+
+        .box1 {
+            background: linear-gradient(red, blue, green);
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+
+        .box2 {
+            height: 400px;
+            position: relative;
+        }
+
+        .inner {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+
+        .box3 {
+            background: linear-gradient(red, blue, green);
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+
+    </div>
+    <div class="box box2">
+        <div class="inner">
+
+        </div>
+    </div>
+    <div class="box box3">
+
+    </div>
+</body>
+
+</html>

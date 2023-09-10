@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+
+        p {
+            border: 1px solid gray;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        div p {
+            color: red;
+        }
+
+        div>p {
+            color: green;
+        }
+
+        p::first-line {
+            color: red;
+        }
+
+        p::first-letter {
+            font-size: 2rem;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border: none;
+            transition: all ease 1s;
+        }
+
+        .box:hover {
+            background-color: blue;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:active {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <diV>
+        <p>
+            this is a text
+        </p>
+        <p>
+            this is a text
+        </p>
+        <footer>
+            <p>
+                this is a text
+            </p>
+            <p>
+                this is a text
+            </p>
+        </footer>
+    </diV>
+    <hr>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, corporis. Nulla dolorem amet rerum ullam quia rem,
+        vero laboriosam tenetur molestias illum magni sint neque nobis deserunt dignissimos, illo iusto quas doloremque
+        id debitis in obcaecati! Ducimus eos nemo repellat nisi! Mollitia, libero quos! Mollitia officia odit modi totam
+        placeat.
+    </p>
+    <hr>
+    <div class="box">
+
+    </div>
+    <hr>
+    <a href="https:codeyad.com">
+        codeyad
+    </a>
+</body>
+
+</html>

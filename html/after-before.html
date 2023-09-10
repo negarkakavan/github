@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>after-before</title>
+     <style>
+         .main-box {
+             width: 350px;
+             height: 600px;
+             border: 1px solid black;
+             border-radius: 15px;
+             margin: 0 auto;
+             background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/4/6.jpg);
+             background-position: center;
+             background-attachment: scroll;
+             background-size: cover;
+             background-repeat: no-repeat;
+         }
+
+         .chat-item {
+             width: 200px;
+             background-color: white;
+             border-radius: 15px;
+             margin: 10px 10px;
+             position: relative;
+         }
+
+         .chat-item p {
+             color: black;
+             padding: 5px;
+         }
+
+         .chat-item::before {
+             content: '';
+             width: 10px;
+             height: 10px;
+             background-color: white;
+             position: absolute;
+             bottom: -2px;
+             left: 3px;
+             transform: rotatez(120deg) skewx(50deg);
+         }
+     </style>
+ </head>
+
+ <body>
+     <div class="main-box">
+         <div class="chat-item">
+             <p>
+                 hi baybi
+             </p>
+         </div>
+         <div class="chat-item">
+             <p>
+                 how are you?
+             </p>
+         </div>
+         <div class="chat-item">
+             <p>
+                 i love you
+             </p>
+         </div>
+         <div class="chat-item">
+             <p>
+                 i love you so much!
+             </p>
+         </div>
+     </div>
+ </body>
+
+ </html>

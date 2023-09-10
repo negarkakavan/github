@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shadow</title>
+    <style>
+        .box {
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            margin: 50px auto;
+        }
+
+        .box:hover {
+
+            animation: move ease 2s infinite both;
+        }
+
+        @keyframes move {
+            50% {
+                box-shadow: 10px 10px 50px 10px black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabless</title>
+    <style>
+        table{
+            border: 1px solid red;
+        }
+        td{
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="2">
+                1-1
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2-1
+            </td>
+            <td rowspan="2">
+                2-2
+            </td>
+        </tr>
+        <tr>
+            <td>
+                3-1
+            </td>
+            <tr>
+                <td colspan="2">
+                    4-1
+                </td>
+            </tr>
+        </tr>
+    </table>
+</body>
+</html>

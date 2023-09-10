@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaquerieslayout</title>
+    <style>
+        #layout {
+            width: 600px;
+            height: auto;
+            border: 1px solid red;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        #header {
+            width: calc(100%-2px);
+            height: 200px;
+            border: 1px solid blue;
+        }
+
+        #body {
+            width: calc(100%-2px);
+            height: 500px;
+            border: 1px solid blue;
+        }
+
+        #sidebar {
+            width: calc(30% - 12px);
+            height: calc(100% - 12px);
+            border: 1px solid blue;
+            margin: 5px;
+            float: right;
+        }
+
+        #content {
+            width: calc(70% - 12px);
+            height: calc(100% - 12px);
+            border: 1px solid blue;
+            margin: 5px;
+            float: left;
+        }
+
+        #footer {
+            width: calc(100%-2px);
+            height: 200px;
+            border: 1px solid blue;
+        }
+
+        @media only screen and (max-width: 650px) {
+            #sidebar {
+                width: calc(100% - 12px);
+                height: calc(50% - 12px);
+            }
+
+            #content {
+                width: calc(100% - 12px);
+                height: calc(50% - 12px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="layout">
+
+        <div id="header">
+
+        </div>
+        <div id="body">
+            <div id="sidebar">
+
+            </div>
+            <div id="content">
+
+            </div>
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
+</body>
+
+</html>
